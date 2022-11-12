@@ -1,0 +1,95 @@
+.logo{
+    float: left;
+    width: 10%;
+    height: 133px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.header {
+    float: left;
+    width: 90%;
+    height: 50px;
+    font-family: 'Martel', serif;
+    font-size: 35px;
+    text-align: center;
+    color:rgb(0,0,0);
+    margin-top: 11px;
+}
+/* .nav li {
+    display:inline-block;
+    margin: auto;
+    /* padding: 25px;
+    border: 0;
+    /* list-style: none; 
+    text-align: center;
+} 
+.nav{
+    height: 50px;
+    width:100%;
+    clear: both;
+    background-color: rgb(126, 7, 7);
+    color: white;
+    font-size: larger;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    text-align: center;
+} */
+        .main{
+background-color:rgba(0, 0, 0, 0.315) ;
+    color: rgba(0, 0, 0, 0.473);
+    text-align: center;
+    padding: 50px;
+    /* border:solid rgb(126, 7, 7); */
+    border-width:50px;
+    font-family: 'Crimson Text', serif;
+    font-size: unset;
+    background: url(crime.jpg) no-repeat center top;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  }
+        h1{
+    font-weight: revert;
+    font-family: 'Montserrat', sans-serif;
+    font-size:50px;
+    text-align: center;
+    color: rgb(0,0,0);
+    margin-top: 0%;
+  }
+  h2{
+    color: black;
+    font-weight: unset;
+    font-family: 'Montserrat', sans-serif;
+    font-size: larger;
+    color: rgb(126, 7, 7);
+    text-align: left;
+}
+.safety{
+  text-align: center;
+  padding: 50px;
+  /* border:solid rgb(126, 7, 7); */
+ /* background-color: rgba(0, 0, 0, 0.315);   */
+  border-width:50px;
+  /* margin-top: -3%; */
+}
+p{
+  color:black;
+  font-family: 'Crimson Text', serif;
+font-size: larger;
+text-align: center;
+}
+.safety li{
+  color: black;
+  font-family: 'Crimson Text', serif;
+  font-size: larger;
+  float: none;
+}
+ /* .body{
+    background-color: rgb(0, 0, 0);
+    }  */
+
+    ul {
+  text-align: center;
+  list-style: inside;
+  
+}

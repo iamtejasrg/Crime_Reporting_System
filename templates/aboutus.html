@@ -1,0 +1,38 @@
+{% include 'base.html' %}
+  {% load static %} 
+
+{% comment %} {% block title %}About{% endblock title %} {% endcomment %}
+<head>
+    <title>About Us</title>
+    <link rel="stylesheet" href="{%  static  'css/styling.css'  %}">
+    </head>
+    {% block body %}
+    <body class="body">
+    {% csrf_token %}
+
+<div class="header">
+        <div class="main">
+            <h1><u>About Us</u></h1>
+            <p style="font-size: 22px">
+Online Crime Reporting is a website that has smart, conscious, honest, and well-meaning professionals behind it. The portal is a one-stop solution for alert citizens to report a crime and follow the trail to see the perpetrators of the crime booked for their offense.
+<br>
+The website to report crime has a user-friendly interface. All a person needs to do is log onto the portal, finish a quick introduction and report the crime, choosing from a list of crime criteria. (enter the list of crimes that can be reported via the website). Complaints reported through this portal are dealt with by respective police authorities based on the information provided by the user. Option for anonymous reporting of crimes has also been provided on the portal. This will ensure more crimes to be reported.
+            </p>
+        </div>
+    </div>
+<br>
+ <div class="demo-wrap">
+  <img
+    class="demo-bg"
+    src="static/2.png"
+    alt=""
+  >
+  
+</div>
+  
+  
+{% comment %} </div>
+    <footer class='text-center text-light bg-dark'>
+      All rights reserved.©
+    </footer> {% endcomment %}
+{% endblock body %}

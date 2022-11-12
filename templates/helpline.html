@@ -1,0 +1,96 @@
+{% include 'base.html' %}  
+  {% load static %} 
+
+{% comment %} {% block title %}Help{% endblock title %} {% endcomment %}
+
+<head>
+
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Helpline</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Martel&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="{%  static  'css/helpline.css'  %}">
+</head>
+{% block body %}
+
+<body>
+{% csrf_token %}
+
+    <div class="helpline">
+        <table><h1><a name="helpline"></a>Helpline</h1>
+          <tr><th>Name of office</th>
+          <th>Telephone number</th>
+          <th>Fax number</th>
+          <th>Extension number</th></tr>
+          <tr>
+            <td>Commissioner of Police, Mumbai</td>
+            <td>22620826</td>	
+            <td>22621835</td>
+            <td>---</td>
+          </tr>
+          <tr>
+            <td>Police Control Room (Mumbai City)</td>
+            <td>22621855 22621983 22625020 22641449 22620111</td>	
+            <td>22633319</td>	
+            <td>100</td>
+          </tr>
+          <tr>
+            <td>Infoline</td>
+           <td>1090</td>
+           <td>---</td>
+            <td>---</td>
+          </tr>
+          <tr>
+          <td>Women Help Line</td>
+          <td>22633333 22620111</td>		
+          <td>---</td>
+          <td>103</td>
+          </tr>
+          <tr>
+           <td> Special Branch-I</td>
+           <td>22610302 22610303</td>
+          <td>---</td>	
+          <td>---</td>
+          </tr>
+          <tr>
+           <td>Anti Corruption Bureau</td> 
+           <td>24942618 24921212</td>
+           <td>---</td>
+           <td>---</td>	
+          </tr>
+          <tr>
+            <td>Director General of Police Control Room</td>
+            <td>22026636 22822631</td>
+            <td>---</td>
+            <td>---</td>
+          </tr>
+          <tr>
+           <td>Rapid Action Force Control Room</td> 
+           <td>27410710</td>	
+           <td>---</td>
+           <td>---</td>	
+          </tr>
+        </table>
+      </div>
+      </div>
+       <div class="demo-wrap">
+  <img
+    class="demo-bg"
+    src="static/2.png"
+    alt="">
+  
+</div>
+      {% comment %} <br>
+<footer class='text-center text-light bg-dark'>
+      All rights reserved.©
+    </footer> {% endcomment %}
+</body>
+
+{% endblock body %}

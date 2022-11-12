@@ -1,0 +1,209 @@
+{% include 'base.html' %}
+  {% load static %} 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Safety Measures</title>
+    <link rel="stylesheet" href="{%  static  'css/safety.css'  %}">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Martel&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap" rel="stylesheet">
+    {% comment %} <style>
+         {% comment %} .logo{
+    float: left;
+    width: 10%;
+    height: 133px;
+    background-position: center;
+    background-repeat: no-repeat; 
+}
+{% comment %} .header {
+    float: left;
+    width: 90%;
+    height: 50px;
+    font-family: 'Martel', serif;
+    font-size: 35px;
+    text-align: center;
+    color:rgb(0,0,0);
+    margin-top: 11px; {% endcomment %}
+{% comment %} }
+.nav li {
+    display:inline-block;
+    margin: auto;
+    padding: 25px;
+    border: 0;
+    list-style: none;
+    text-align: center;
+} {% endcomment %}
+{% comment %} .nav{
+    height: 50px;
+    width:100%;
+    clear: both;
+    background-color: rgb(126, 7, 7);
+    color: white;
+    font-size: larger;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    text-align: center; 
+        {% comment %} .main{
+background-color:rgba(0, 0, 0, 0.315) ;
+    color: rgba(0, 0, 0, 0.473);
+    text-align: center;
+    padding: 50px;
+    border:solid rgb(126, 7, 7);
+    border-width:50px;
+    font-family: 'Crimson Text', serif;
+    font-size: unset;
+    background: url(crime.jpg) no-repeat center top;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  } {% endcomment %}
+        {% comment %} h1{
+    font-weight: revert;
+    font-family: 'Montserrat', sans-serif;
+    font-size:50px;
+    text-align: center;
+    color: rgb(0,0,0);
+    margin:0%
+  } {% endcomment %}
+  {% comment %} h2{
+    color: black;
+    font-weight: unset;
+    font-family: 'Montserrat', sans-serif;
+    font-size: larger;
+    color: rgb(126, 7, 7);
+    text-align: left; 
+.safety{
+  text-align: center;
+  padding: 50px;
+  {% comment %} border:solid rgb(126, 7, 7); {% endcomment %}
+  {% comment %} background-color: rgba(0, 0, 0, 0.315); 
+  border-width:50px;
+  margin-top: -3%;
+}
+p{
+  color:black;
+  font-family: 'Crimson Text', serif;
+font-size: larger;
+text-align: center;
+}
+.safety li{
+  color: black;
+  font-family: 'Crimson Text', serif;
+  font-size: larger;
+
+}
+ {% comment %} .body{
+    background-color: rgb(0, 0, 0);
+    } 
+    ul {
+  text-align: center;
+  list-style: inside;
+}
+
+    </style> {% endcomment %}
+</head>
+ {% block body %}
+<body class="body">
+    {% comment %} <div class="logo"></div>
+    <div class="header">Taking stock of your security round the clock!<br>Help us to help you</div>
+  <div class="nav">
+    <li><a href="home" title="Home" style="color: white;text-decoration: none;">Home</a></li>
+    <li><a href="aboutus" title="About Us" style="color: white;text-decoration: none;">About Us</a></li>
+    <li><a href="helpline" title="Helpline" style="color: white;text-decoration: none;">Helpline</a></li>
+    <li><a href="safety" title="Safety Measures" style="color: white;text-decoration: none;">Safety Measures</a></li>
+</div> {% endcomment %}
+    <div class="safety">
+        <h1><a name="safety"></a>Safety Measures</h1>
+      <p><strong>The 10 Principles of Crime Prevention are:</strong></p>
+      <p><strong>1. Target Hardening</strong><br>
+          Making your property harder for an offender to access.<br>
+       </p>
+      <ul>
+      <li>Upgrading the locks on your doors, windows, sheds and outbuildings</li>
+      <li>Fitting sash jammers to vulnerable doors and windows</li>
+      <li>Using secure passwords to prevent criminals hacking your online accounts</li>
+      </ul>
+      <p><strong>2. Target Removal</strong><br>
+      Ensuring that a potential target is out of view.<br>
+      </p>
+      <ul>
+      <li>Not leaving items on view through your windows – i.e. laptops, phones, keys, bags</li>
+      <li>Putting your vehicle in the garage if you have one and not leaving valuables on display</li>
+      <li>Being cautious about what you post online as it may be used to identify or locate you offline</li>
+      </ul>
+      <p><strong>3. Reducing the Means</strong><br>
+      Removing items that may help commit an offence.<br>
+       </p>
+      <ul>
+      <li>Not leaving tools and ladders in the garden and clearing up any rubble/bricks</li>
+      <li>Keeping wheelie bins out of reach, as they may be a climbing aid or help transport items</li>
+      <li>Making sure that bricks and rubble are cleared up</li>
+      </ul>
+      <p><strong>4. Reducing the Payoff</strong><br>
+      Reducing the profit the criminal can make from the offence.<br>
+       </p>
+      <ul>
+      <li>Security marking your property</li>
+      <li>Marking your property in such a way that others will not want to buy from the thief</li>
+      <li>Not buying property you believe or suspect to be stolen</li>
+      </ul>
+      <p><strong>5. Access Control</strong><br>
+      Looking at measures that will control access to a location, a person or object.<br>
+       </p>
+      <ul>
+      <li>Locking your doors and windows to both your house and your vehicle</li>
+      <li>Ensuring that fencing, hedges, walls and other boundary treatments are in a good state of repair</li>
+      <li>Putting a security system in place at a commercial site (entry barriers, security guards, ID cards)</li>
+      </ul>
+      <p><strong>6. Surveillance</strong><br>
+      Improving surveillance around homes, businesses or public places to deter criminals.<br>
+       </p>
+      <ul>
+      <li>Removing high hedges / fences at the front of your home that allows an offender to work unseen</li>
+      <li>Consider adding CCTV to a commercial site or public place</li>
+      <li>Establishing a Neighbourhood Watch Scheme in your street</li>
+      </ul>
+      <p><strong>7. Environmental Change</strong><br>
+      Ensuring your property and wider community looks cared for.<br>
+       </p>
+      <ul>
+      <li>Ensuring that graffiti and domestic/commercial waste is cleared up</li>
+      <li>Reporting issues with fly-tipping or broken street lights to the relevant authority</li>
+      <li>Working with the police and local authority to close a footpath</li>
+      </ul>
+      <p><strong>8. Rule Setting</strong><br>
+      Changing our habits by setting rules and positioning signage in appropriate locations. <br>
+       </p>
+      <ul>
+      <li>Introducing a rule that the last person entering / leaving should lock the door and remove the keys</li>
+      <li>Informing visitors to commercial sites that they must report to reception on arrival</li>
+      <li>Informing users that a particular site is closed between certain times and should not be accessed</li>
+      </ul>
+      <p><strong>9. Increase the Chances of Being Caught</strong><br>
+      Increasing the likelihood that an offender will be caught to prevent crime occurring.<br>
+       </p>
+      <ul>
+      <li>Making use of dusk to dawn security lighting is in place and in working order</li>
+      <li>Using good quality CCTV and/or alarm systems, especially on commercial sites and public places</li>
+      <li>Upgrading security to delay an offender, meaning they have to spend more time to gain access</li>
+      </ul>
+      <p><strong>10. Deflecting Offenders</strong><br>
+      Deterring an offender or deflecting their intention.<br>
+       </p>
+      <ul>
+      <li>Using timer switches to make our homes look occupied if vacant after the hours of darkness</li>
+      <li>Running youth diversionary schemes with partner agencies</li>
+      <li>Referring offenders to drug rehabilitation programmes</li>
+      </ul>
+      </div>
+</body>
+</html>
+{% endblock body %}

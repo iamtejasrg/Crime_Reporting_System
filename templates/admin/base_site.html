@@ -1,0 +1,24 @@
+{% extends 'admin/base.html'%}
+
+{% load static %}
+{% block branding %}
+<h1 id ="head">
+Admin Login
+</h1>
+
+{% endblock %}
+
+{% block extrastyle %}
+ <link rel="stylesheet" href = {% static 'admin.css'%}>
+ {% comment %}
+<div class="demo-wrap">
+  <img
+    class="demo-bg"
+    url="bd.png"
+    alt=""
+  >
+  
+</div> {% endcomment %}
+{% endblock %}
+
+

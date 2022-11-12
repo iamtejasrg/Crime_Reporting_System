@@ -1,0 +1,156 @@
+{% include 'base.html' %}  
+{% load static %} 
+<html lang="en">
+<head>
+ <!-- {% block title %}Report{% endblock title %} -->
+<link rel="stylesheet" href="{%  static  'complaint.css'  %}">
+</head>
+
+{% block body %}
+<div class="login-box">
+    <form id="locform" method="post"  action="/complaint"enctype="multipart/form-data">
+         {% csrf_token %}
+         <div class="demo-wrap">
+  <img
+    class="demo-bg"
+    src="static/2.png"
+    alt=""
+  >
+  
+</div>
+            <h3>Report Complaint</h3>
+           
+            <div style="font-size: 90%;">
+                <!-- <p>
+                    <strong>Location of incident:</strong><br />
+                    <select name="Location">
+                        <option disabled="disabled" selected="selected" value="">Please Choose One...</option>
+                        <option value="Classroom">Classroom</option>
+                        <option value="Gym">Gym</option>
+                        <option value="Work">Workspace</option>
+                        <option value="Bank">Bank</option>
+                        <option value="Playground">Playground</option>
+                        <option value="Home">Home</option>
+                        <option value="Bus Stop">Bus Stop</option>
+                        <option value="On Bus">On Bus</option>
+                        <option value="Other">Other</option>
+                    </select> 
+                </p> -->
+
+                <p><strong>Name of victim(s)</strong>:
+                    <br />
+                    <input id="name" placeholder="Name " name="name" style=" font-size: 90%;" type="text" required>
+                </p>
+
+                {% comment %} <p><strong>Type of Bullying:</strong>
+                    <br />
+                    <input name="BullyingType" type="checkbox" value="Physical" />Physical
+                    <br />
+                    <input name="BullyingType" type="checkbox" value="Relational" />Relational
+                    <br />
+                    <input name="BullyingType" type="checkbox" value="Verbal" />Verbal</p>
+
+                <p><strong>If physical, did it result in injury?</strong>
+                    <br />
+                    <input name="ResultInInjury" type="radio" value="Yes" />Yes
+                    <input name="ResultInInjury" type="radio" value="No" />No</p>
+
+             
+
+                <p><strong>Bullying Behaviors:&nbsp;</strong>Please check the type of behavior(s) assoicated with this incident:</p>
+
+                <table border="0" cellpadding="4" cellspacing="4" style="font-size: 100%; border-collapse: collapse;">
+                    <tbody>
+                      
+                        <tr>
+                            <td>
+                                <input name="BullyBehaviors" type="checkbox" value="Disability" />Disability</td>
+                            <td>
+                                <input name="BullyBehaviors" type="checkbox" value="Excluded" />Excluded</td>
+                            <td>
+                                <input name="BullyBehaviors" type="checkbox" value="Hit" />Hit</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input name="BullyBehaviors" type="checkbox" value="InappropriateTouch" />Inappropriate Touching</td>
+                            <td>
+                                <input name="BullyBehaviors" type="checkbox" value="IntimidationExtortion" />Intimidation of Extortion</td>
+                            <td>
+                                <input name="BullyBehaviors" type="checkbox" value="Kicked" />Kicked</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input name="BullyBehaviors" type="checkbox" value="Punched" />Punched</td>
+                            <td>
+                                <input name="BullyingBehaviors" type="checkbox" value="Racial" />Racial</td>
+                            <td>
+                                <input name="BullyBehaviors" type="checkbox" value="Religious" />Religious</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input name="BullyBehaviors" type="checkbox" value="ShovedPushed" />Shoved or Pushed</td>
+                            <td>
+                                <input name="BullyBehaviors" type="checkbox" value="StaringLeering" />Staring or Leering</td>
+                            <td>
+                                <input name="BullyBehaviors" type="checkbox" value="TauntingRidiculing" />Taunting or Ridiculing</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input name="BullyBehaviors" type="checkbox" value="Threatened" />Threatened</td>
+                            <td>
+                                <input name="BullyBehaviors" type="checkbox" value="ToldLiesRumors" />Told Lies or False Rumors</td>
+                            <td>
+                                <input name="BullyBehaviors" type="checkbox" value="other" /> other</td>
+                        </tr>
+                    </tbody>
+                </table> {% endcomment %}
+
+                <p><strong>Place of the incident</strong>:
+                    <br />
+                    <input name="place" style=" font-size: 90%;" type="text" placeholder="Enter address" required>
+                </p> 
+
+                <p><strong>Describe the incident</strong>:
+                    <br />
+                    <textarea name="Description" rows="12" style="width: 95%; font-size: 90%;"></textarea>
+                </p>
+
+                <p><strong>Physical Evidence:</strong>
+                    <br />
+                    {% comment %} <input name="PhysicalEvidence" type="checkbox" value="Notes" /> Notes
+                    <input name="PhysicalEvidence" type="checkbox" value="Email" /> Email
+                    <input name="PhysicalEvidence" type="checkbox" value="Video_Audio" /> Video/Audio
+                    <input name="PhysicalEvidence" type="checkbox" value="Website" /> Website
+                    <br />
+                    <input name="PhysicalEvidence" type="checkbox" value="Other" /> Other: {% endcomment %}
+                    <input name="PhysicalEvidence" placeholder= "Mention the type of evidence" style="font-size: 90%;" type="text" required>
+                </p>
+
+                <p><strong>Upload a photo of the incident:</strong>
+                    <br> <br>
+                    <input name="fileUpload" type="file" accept="image/png, image/jpeg, image/jpg" >
+                </p>
+            </div>
+
+
+
+            <p id="message">
+
+            </p>
+            <!-- Move style of button into stylesheet, once the button is nailed down... -->
+            <p style="text-align: center;">
+                <button id="submitButton" name="submitButton" type="submit" >
+                    Submit This Report</button>
+            </p>
+        </div>
+     
+        </div>
+    </form>
+
+</div>
+
+{% comment %} <br>
+<footer class='text-center text-light bg-dark'>
+      All rights reserved.©
+    </footer> {% endcomment %}
+{% endblock body %}

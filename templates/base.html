@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> {% block title %}{% endblock title %} | main page</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Martel&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="static/mystyle.css">
+</head>
+
+    <div class="nav">
+    <div class="logo"></div>
+   <a href="/login"  style="color: #f3bd76d3;text-decoration: none;"><button >Login</button>
+   <a href="/signup"  style="color: #f3bd76d3;text-decoration: none;">
+    <button >Sign up</button>
+    <li><a href="/admin" title="Admin" style="color: #f3bd76d3;text-decoration: none;">Admin</a></li>
+    <li><a href="/aboutus" title="about us" style="color: #f3bd76d3;text-decoration: none;">About Us</a></li>
+    {% comment %} <li><a href="/safety" title="Safety Measures" style="color: #f3bd76d3;text-decoration: none;">Safety Measures</a></li>  {% endcomment %}
+    <li><a href="/helpline" title="Helpline" style="color: #f3bd76d3;text-decoration: none;">Helpline</a></li>
+    <li><a href="/contact" title="contact" style="color: #f3bd76d3;text-decoration: none;">Contact</a></li>
+    <li><a href="/" title="home" style="color: #f3bd76d3;text-decoration: none;">Home</a></li> 
+    <div class="heading"><i><li>CRIME REPORTING<br>SYSTEM</li></div></i>
+
+
+{% block body %} 
+{% endblock body %}
+   
+ 
+</html>

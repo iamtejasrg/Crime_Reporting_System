@@ -1,0 +1,130 @@
+{% extends 'base.html' %}
+
+<!--{% block title %}Home{% endblock title %}-->
+
+{% block body %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Martel&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="static/mystyle.css">
+</head>
+<body>
+    
+<div class="bg">
+  <img src="https://jooinn.com/images/crime-scene-investigation-3.jpg" alt="img" style="width: 100vw; ">
+  <div class="box2">
+    <div class="slideshow-container">
+      <div class="mySlides fade">
+        {% comment %} <div class="numbertext">1 / 4</div> {% endcomment %}
+        <img src="https://cdn.dnaindia.com/sites/default/files/styles/full/public/2016/12/15/528918-mumbai-police-121416.jpg" style="width:130%;margin-top: -14%;margin-left: -5.25%;border-radius: 20px  20px  20px  20px;">
+      </div>
+      <div class="mySlides fade">
+        {% comment %} <div class="numbertext">2 / 4</div> {% endcomment %}
+        <img src="https://tse4.mm.bing.net/th?id=OIP.abvCn_ApEblUAFf3E0rRbQHaEK&pid=Api&P=0&w=314&h=177" style="width:130%;margin-top:-14%;margin-left: -5.25%;border-radius: 20px  20px  20px  20px;">
+      </div>
+      <div class="mySlides fade">
+        {% comment %} <div class="numbertext">3 / 4</div> {% endcomment %}
+        <img src="https://gumlet.assettype.com/freepressjournal%2F2020-04%2F8e57e1a4-18d5-41c9-9045-49c462c62f86%2F2504_20200424232l.jpg?rect=0%2C0%2C760%2C428&w=1200" style="width:130%;margin-top: -14%;margin-left: -5.25%;border-radius: 20px  20px  20px  20px;">
+      </div>
+      <div class="mySlides fade">
+        {% comment %} <div class="numbertext">4 / 4</div> {% endcomment %}
+        <img src="http://www.travelindiadestinations.com/wp-content/uploads/2014/02/Mumbai-Police-Headquarters.jpg" style="width:130%;margin-top: -14%;margin-left: -5.25%;border-radius: 20px  20px  20px 20px;">
+      </div>
+      </div>
+      <script>
+        var slideIndex = 0;
+        showSlides();
+        function showSlides() {
+          var i; 
+          var slides = document.getElementsByClassName("mySlides");
+          for(i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+          }
+          slideIndex++;
+          if(slideIndex > slides.length) {
+            slideIndex = 1
+          }
+          slides[slideIndex - 1].style.display = "block";
+          setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+      </script>
+          <div class="box" style="font-size: x-large;color : #fae56d;text-align: left;">
+      
+      "Everything You Know And Can Do, Is For A Reason And At Some Point Your Whole Life Will Make Sense."<br>
+    "Injustice Anywhere Is A Threat To Justice Everywhere."
+    
+  </div>
+</div>
+</div>
+ <footer class="footer-distributed">
+
+		<div class="footer-left">
+
+				<h3>Crime Reporting<span> System</span></h3>
+
+				<p class="footer-links">
+					<a href="/">Home</a>
+					·
+					<a href="aboutus">About</a>
+					·
+					{% comment %} <a href="#">Faq</a>
+					· {% endcomment %}
+					<a href="/contact">Contact</a>
+				</p>
+
+				<p class="footer-company-name">Copyright © 2021</p>
+
+				<div class="footer-icons">
+
+					<a href="https://www.facebook.com/pages/Mumbai-Maharashtra-Police/137553123627272"><i class="fa fa-facebook"></i></a>
+					<a href="https://twitter.com/MumbaiPolice?s=20"><i class="fa fa-twitter"></i></a>
+					<a href="https://instagram.com/mumbaipolice?utm_medium=copy_link"><i class="fa fa-instagram"></i></a>
+
+				</div>
+       <p style="color: white;">WhatsApp Helpline : 8454999999<br>
+        Citizen Wall : 103<br>
+        Control Room : 100<br>
+        Elder Line : 1090</p> 
+
+			</div>
+
+			<div class="footer-right">
+
+				
+				
+			</div> 
+ 
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+  {% comment %} {% if messages %}
+{% for message in messages %}
+<div class="alert alert-{{ message.tags }} alert-dismissible fade show my-0" role="alert">
+  <strong>{{ message }}</strong>
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+
+
+ {% endfor %}
+{% endif %}  {% endcomment %}
+</html>
+{% endblock body %}
+
+
